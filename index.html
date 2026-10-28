@@ -8,6 +8,390 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!-- Write your code here -->
+    <div class="dashboard">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+
+            <div class="logo">DashFlow</div>
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <nav class="navigation">
+                <a href="#overview" class="nav-link active">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="#analytics" class="nav-link">
+                    <span>▥</span> Analytics
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    <span>▣</span> Projects
+                </a>
+
+                <a href="#tasks" class="nav-link">
+                    <span>☑</span> My Tasks
+                </a>
+
+                <a href="#activity" class="nav-link">
+                    <span>◷</span> Activity
+                </a>
+
+                <a href="#settings" class="nav-link">
+                    <span>⚙</span> Settings
+                </a>
+            </nav>
+
+            <div class="profile">
+                <div class="avatar">AA</div>
+
+                <div>
+                    <h4>Ali Abdelhamid</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="overview">
+
+            <!-- Header Bar -->
+            <header class="header">
+
+                <div class="header-title">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here's what's happening today.</p>
+                </div>
+
+                <div class="header-actions">
+                    <input
+                        type="search"
+                        class="search-box"
+                        placeholder="Search anything..."
+                        aria-label="Search"
+                    >
+
+                    <button class="notification" type="button"
+                        aria-label="Notifications">
+                        ♧
+                    </button>
+                </div>
+
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome">
+
+                <div>
+                    <h2>Good morning, Ali Abdelhamid! 👋</h2>
+
+                    <p>
+                        Track your progress, manage your projects,
+                        and stay productive throughout the day.
+                    </p>
+                </div>
+
+                <button type="button" onclick="window.print()">
+                    Export Report
+                </button>
+
+            </section>
+
+            <!-- Analytics Grid -->
+            <section id="analytics">
+
+                <div class="section-heading">
+                    <h2>Analytics Overview</h2>
+                    <a href="#tasks">View Details →</a>
+                </div>
+
+                <div class="analytics-grid">
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span class="stat-label">Total Projects</span>
+                            <div class="stat-icon">📁</div>
+                        </div>
+
+                        <h3>24</h3>
+                        <p class="stat-change">↑ 12% this month</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span class="stat-label">Tasks Completed</span>
+                            <div class="stat-icon">✅</div>
+                        </div>
+
+                        <h3>156</h3>
+                        <p class="stat-change">↑ 8% this month</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span class="stat-label">Pending Tasks</span>
+                            <div class="stat-icon">⏳</div>
+                        </div>
+
+                        <h3>18</h3>
+                        <p class="stat-change negative">↓ 5% this week</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span class="stat-label">Productivity</span>
+                            <div class="stat-icon">📈</div>
+                        </div>
+
+                        <h3>94%</h3>
+                        <p class="stat-change">↑ 15% this month</p>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Projects and Recent Activity -->
+            <section class="content-grid">
+
+                <!-- Project Progress -->
+                <div class="panel" id="projects">
+
+                    <div class="section-heading">
+                        <h2>Project Progress</h2>
+                        <a href="#tasks">View All →</a>
+                    </div>
+
+                    <div class="project-list">
+
+                        <article class="project">
+
+                            <div class="project-info">
+                                <div>
+                                    <h3>Website Redesign</h3>
+                                    <p>UI/UX Design · Updated today</p>
+                                </div>
+
+                                <span class="project-percent">75%</span>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-bar"
+                                    style="width: 75%">
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="project">
+
+                            <div class="project-info">
+                                <div>
+                                    <h3>Mobile Application</h3>
+                                    <p>Development · Updated yesterday</p>
+                                </div>
+
+                                <span class="project-percent">60%</span>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-bar progress-green"
+                                    style="width: 60%">
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="project">
+
+                            <div class="project-info">
+                                <div>
+                                    <h3>Marketing Campaign</h3>
+                                    <p>Marketing · Updated 2 days ago</p>
+                                </div>
+
+                                <span class="project-percent">35%</span>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-bar progress-orange"
+                                    style="width: 35%">
+                                </div>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <!-- Recent Activity Feed -->
+                <div class="panel" id="activity">
+
+                    <div class="section-heading">
+                        <h2>Recent Activity</h2>
+                        <a href="#activity">View All →</a>
+                    </div>
+
+                    <div class="activity-list">
+
+                        <article class="activity-item">
+                            <div class="activity-icon green">✓</div>
+
+                            <div class="activity-text">
+                                <p>
+                                    <strong>Aisha Abdelhamid</strong>
+                                    completed the Website Redesign task.
+                                </p>
+
+                                <span class="activity-time">
+                                    10 minutes ago
+                                </span>
+                            </div>
+                        </article>
+
+                        <article class="activity-item">
+                            <div class="activity-icon">📄</div>
+
+                            <div class="activity-text">
+                                <p>
+                                    <strong>Hamza Marzouk</strong>
+                                    uploaded a new project document.
+                                </p>
+
+                                <span class="activity-time">
+                                    45 minutes ago
+                                </span>
+                            </div>
+                        </article>
+
+                        <article class="activity-item">
+                            <div class="activity-icon orange">⚡</div>
+
+                            <div class="activity-text">
+                                <p>
+                                    <strong>Habiba Ali</strong>
+                                    updated the Mobile Application project.
+                                </p>
+
+                                <span class="activity-time">
+                                    2 hours ago
+                                </span>
+                            </div>
+                        </article>
+
+                        <article class="activity-item">
+                            <div class="activity-icon green">✓</div>
+
+                            <div class="activity-text">
+                                <p>
+                                    <strong>Zain Mohammed</strong>
+                                    completed 3 pending tasks.
+                                </p>
+
+                                <span class="activity-time">
+                                    4 hours ago
+                                </span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Tasks -->
+            <section class="panel tasks-panel" id="tasks">
+
+                <div class="section-heading">
+                    <h2>Recent Tasks</h2>
+                    <a href="#tasks">View All →</a>
+                </div>
+
+                <div class="table-wrapper">
+
+                    <table class="tasks-table">
+
+                        <thead>
+                            <tr>
+                                <th>Task Name</th>
+                                <th>Assigned To</th>
+                                <th>Due Date</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Design Homepage</td>
+                                <td>Aisha Abdelhamid</td>
+                                <td>Oct 30, 2026</td>
+                                <td>High</td>
+                                <td>
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Build Login Page</td>
+                                <td>Hamza Marzouk</td>
+                                <td>Nov 02, 2026</td>
+                                <td>Medium</td>
+                                <td>
+                                    <span class="status progress">
+                                        In Progress
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Update Documentation</td>
+                                <td>Habiba Ali</td>
+                                <td>Nov 05, 2026</td>
+                                <td>Low</td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Test Application</td>
+                                <td>Zain Mohammed</td>
+                                <td>Nov 07, 2026</td>
+                                <td>High</td>
+                                <td>
+                                    <span class="status progress">
+                                        In Progress
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer" id="settings">
+                <p>
+                    © 2026 DashFlow Dashboard. All rights reserved.
+                </p>
+            </footer>
+
+        </main>
+
+    </div>
 </body>
 </html>
